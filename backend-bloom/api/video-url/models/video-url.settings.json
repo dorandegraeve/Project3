@@ -1,0 +1,17 @@
+{
+  "kind": "collectionType",
+  "collectionName": "video_urls",
+  "info": {
+    "name": "Video url"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "url": {
+      "type": "string"
+    }
+  }
+}
