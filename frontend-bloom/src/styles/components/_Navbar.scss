@@ -4,9 +4,24 @@
     align-items: center;
     padding: 0 5% 0 5%;
     background-color: #ffffff;
+    color: #444F6B;
+    height: 120px;
+    font-weight: 500;
+    font-size: 22px;
   
     &__logo {
       flex: 0 0 65%;
+      display: flex;
+      align-items: center;
+
+      &--img{
+        height: 50px;
+        width: auto;
+        margin-right: 20px;
+      }
+      &--titel {
+        font-weight: 700;
+      }
     }
   
     &__items {
@@ -16,13 +31,13 @@
     }
   
     &__item {
-      font-weight: 600;
+     
       .active {
-        color: rgb(51, 104, 165);
+        color: #6387EB;
       }
       a {
         text-decoration: none;
-        color: grey;
+        color: #444F6B;
         
       }
     }
