@@ -1,0 +1,30 @@
+.Navigatie {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5% 0 5%;
+    background-color: #ffffff;
+  
+    &__logo {
+      flex: 0 0 65%;
+    }
+  
+    &__items {
+      display: flex;
+      justify-content: space-between;
+      flex: 0 0 35%;
+    }
+  
+    &__item {
+      font-weight: 600;
+      .active {
+        color: rgb(51, 104, 165);
+      }
+      a {
+        text-decoration: none;
+        color: grey;
+        
+      }
+    }
+  
+}
