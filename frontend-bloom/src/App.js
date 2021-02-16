@@ -4,6 +4,7 @@ import {BrowserRouter, Switch, Route} from 'react-router-dom'
 import Navigatie__item from './components/Navigatie.js';
 import Navigatie__logo from './components/NavigatieLogo.js';
 
+
 import Home from './pages/Home'
 import Product from './pages/Product'
 
@@ -42,12 +43,14 @@ function App() {
           </div>
         </div>
 
+
         <Switch>
           <Route path="/home" exact component={Home} />
           <Route path="/product" exact component={Product} />
         </Switch>
       </BrowserRouter>
       
+
     </div>
   );
 }
