@@ -1,4 +1,5 @@
 import React from 'react'
+import {NavLink} from 'react-router-dom'
 
 
 export default ({navigatie}) => {
@@ -6,7 +7,8 @@ export default ({navigatie}) => {
     
     return (
         <div className="Navigatie__item">
-            <a href="#">{navigatie}</a> 
+            <NavLink to={'/' + navigatie} exact>{navigatie}</NavLink>
+            
         </div>  
     )
 }
