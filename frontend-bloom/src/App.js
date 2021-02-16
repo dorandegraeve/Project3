@@ -7,6 +7,8 @@ import Navigatie__logo from './components/NavigatieLogo.js';
 
 import Home from './pages/Home'
 import Product from './pages/Product'
+import Prijzen from './pages/Prijzen'
+import Contact from './pages/Contact'
 
 import './styles/style.scss';
 
@@ -47,6 +49,8 @@ function App() {
         <Switch>
           <Route path="/home" exact component={Home} />
           <Route path="/product" exact component={Product} />
+          <Route path="/prijzen" exact component={Prijzen} />
+          <Route path="/contact" exact component={Contact} />
         </Switch>
       </BrowserRouter>
       
