@@ -4,6 +4,7 @@ import Navigatie__item from './components/Navigatie.js';
 import Navigatie__logo from './components/NavigatieLogo.js';
 import Video from './components/Video.js';
 import Card from './components/Card';
+import SVG from './components/svg';
 
 
 function App() {
@@ -80,8 +81,8 @@ function App() {
         />
       ))}
     </div>
-     
 
+    
     </div>
   );
 }
