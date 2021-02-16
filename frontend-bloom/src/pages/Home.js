@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import Video from '../components/Video.js';
 import Card from '../components/Card';
+import Nieuwsbrief from '../components/Nieuwsbrief.js';
 
 export default () => {
 
@@ -54,6 +55,8 @@ export default () => {
                 />
                 ))}
             </div>
+
+            <Nieuwsbrief/>
         </div>
     )
 }

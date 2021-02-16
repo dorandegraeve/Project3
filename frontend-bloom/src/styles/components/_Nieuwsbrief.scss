@@ -1,0 +1,59 @@
+.Nieuwsbrief{
+    text-align: center;
+
+    &__titel{
+        margin-top: 640px;
+        font-size: 64px;
+        color: #444F6B;
+    }
+
+    &__tekst{
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 25px;
+        font-weight: 400;
+        color: #444F6B;
+    }
+
+    &__formulier{
+        margin-bottom: 50px;
+    }
+
+    &__field{
+        position: relative;
+        width: 443px;
+        height: 93px;
+        border-style: none;
+        border-radius: 15px;
+
+        &::placeholder{
+            padding-left: 32px;
+            padding-top: 15px;
+            color: #98A3BD;
+            font-size: 20px;
+      
+        }
+
+        &:focus{
+            outline: none;   
+           }
+        
+    }
+
+    &__knop{
+        position: absolute;
+        margin-left: -93px;
+        height: 93px;
+        width: 93px;
+        color: #FFFFFF;
+        background-color: #6387EB;
+        border-style: none;
+        border-radius: 15px;
+
+        &:focus{
+            outline: none;   
+           }
+
+    }
+
+}
