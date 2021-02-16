@@ -1,6 +1,10 @@
 .Kaartjes {
     display: flex;
     justify-content: center;
+    @include respond(tab-land) { 
+      flex-direction: column;
+      align-items: center;
+  }
   }
   .titel {
     font-size: 52px;
@@ -8,11 +12,12 @@
     text-align: center;
   }
   .Card {
-
+    min-width: 400px;
     max-width: 400px;
     margin: 0 50px 0 50px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 50px;
   
     span{
       font-size: 24px;
@@ -20,6 +25,9 @@
       margin-top: 65px;
       font-weight: 450;
       line-height: 35px;
+      @include respond(phone) { 
+        display: none;
+    }
   }
     
   
