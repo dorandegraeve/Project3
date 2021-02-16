@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Video from '../components/Video.js';
 import Card from '../components/Card';
 import Nieuwsbrief from '../components/Nieuwsbrief.js';
+import ContentLeft from '../components/ContentLeft.js';
 
 export default () => {
 
@@ -17,6 +18,18 @@ export default () => {
         }
 
         getVideos()
+    }, [])
+
+    const [contentLefts, setContentLefts] = useState([])
+
+    useEffect(() => {
+        const getContentLefts = async () => {
+        const response = await fetch('http://localhost:1337/content-lefts')
+        const data = await response.json()
+        setContentLefts(data)
+        }
+        
+        getContentLefts()
     }, [])
 
     const [cards, setCards] = useState([])
@@ -44,6 +57,8 @@ export default () => {
             ))}     
             </div>
 
+            <ContentLeft/>
+
             <h1 className="titel">Onze visie</h1>
 
             <div className="Kaartjes">
@@ -52,6 +67,16 @@ export default () => {
                     Tekstje ={card.Tekstje}
                     Beschrijving={card.Beschrijving}
                     url={card.Image[0] && card.Image[0].url}
+                />
+                ))}
+            </div>
+
+            <div className="Content">
+                {contentLefts.map(contentLeft => (
+                <ContentLeft 
+                    Titel ={contentLeft.Titel}
+                    Ondertitel={contentLeft.Ondertitel}
+                    // url={contentLeft.Image[0] && contentLeft.Image[0].url}
                 />
                 ))}
             </div>
