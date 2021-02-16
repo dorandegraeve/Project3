@@ -6,15 +6,16 @@
 @import "./components/Video";
 
 /////////////////////////////////
-///////
+///////BASE
+
+@import "./base/base";
 
 
-body {
-    margin: auto;
-    background-color: #f6f8fd;
-  }
-  
-  
+
+/////////////////////////////////
+///////ABSTRACTS
+
+@import "./abstracts/mixins";
   
     
   
