@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contents",
+  "info": {
+    "name": "Content"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "Titel2": {
+      "type": "string"
+    },
+    "Ondertitel": {
+      "type": "richtext"
+    },
+    "Ondertitel2": {
+      "type": "richtext"
+    }
+  }
+}
