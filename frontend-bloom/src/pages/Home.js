@@ -24,7 +24,7 @@ export default () => {
 
     useEffect(() => {
         const getContentLefts = async () => {
-        const response = await fetch('http://localhost:1337/content-lefts')
+        const response = await fetch('http://localhost:1337/contents')
         const data = await response.json()
         setContentLefts(data)
         }
@@ -57,7 +57,17 @@ export default () => {
             ))}     
             </div>
 
-            <ContentLeft/>
+            <div className="Content">
+                {contentLefts.map(contentLeft => (
+                <ContentLeft 
+                    Titel ={contentLeft.Titel}
+                    Titel2 ={contentLeft.Titel2}
+                    Ondertitel={contentLeft.Ondertitel}
+                    Ondertitel2={contentLeft.Ondertitel2}
+                    // url={contentLeft.Image[0] && contentLeft.Image[0].url}
+                />
+                ))}
+            </div>
 
             <h1 className="titel">Onze visie</h1>
 
@@ -71,15 +81,7 @@ export default () => {
                 ))}
             </div>
 
-            <div className="Content">
-                {contentLefts.map(contentLeft => (
-                <ContentLeft 
-                    Titel ={contentLeft.Titel}
-                    Ondertitel={contentLeft.Ondertitel}
-                    // url={contentLeft.Image[0] && contentLeft.Image[0].url}
-                />
-                ))}
-            </div>
+            
 
             <Nieuwsbrief/>
         </div>
