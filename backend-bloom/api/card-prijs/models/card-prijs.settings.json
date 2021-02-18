@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "card_prijs",
+  "info": {
+    "name": "Card-prijs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    },
+    "populair": {
+      "type": "boolean"
+    },
+    "omschrijving": {
+      "type": "string"
+    },
+    "prijs": {
+      "type": "decimal"
+    },
+    "gebruikers": {
+      "type": "string"
+    },
+    "admins": {
+      "type": "string"
+    },
+    "modules": {
+      "type": "string"
+    },
+    "modules_lijst": {
+      "type": "enumeration",
+      "enum": [
+        "Module_Doelen",
+        "Module_Notities",
+        "Rol_veranderen",
+        "Module_Feedback",
+        "Teams_samenstellen",
+        "Gratis_ondersteuning",
+        "Vaardigheden_evalueren",
+        "Doelen_opstellen"
+      ]
+    }
+  }
+}

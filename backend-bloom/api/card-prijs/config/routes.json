@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/card-prijs",
+      "handler": "card-prijs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/card-prijs/count",
+      "handler": "card-prijs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/card-prijs/:id",
+      "handler": "card-prijs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/card-prijs",
+      "handler": "card-prijs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/card-prijs/:id",
+      "handler": "card-prijs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/card-prijs/:id",
+      "handler": "card-prijs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
