@@ -14,8 +14,8 @@ export default ({url}) => {
               className="react-player" 
               url={url}
               controls = "true"
-              width='1280px'
-              height='720px'
+              width='90%'
+              height='100%'
             />
           </div>
           
