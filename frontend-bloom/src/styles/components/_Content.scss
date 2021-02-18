@@ -1,23 +1,24 @@
 .Content{
-    margin-top: 545px;
-    margin-left: 105px;
+    margin-top: 54.5rem;
+    margin-left: 10.5rem;
     color: #444f6b;
+    width: 50.5rem;
     
 
     &__titel{
-        font-size: 80px;  
+        font-size: 8rem;  
         font-weight: 700;
-        width: 450px;
+        width: 45rem;
         line-height: 1.2;
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
     }
 
 
 
     &__ondertitel{
-        font-size: 22px; 
-        margin-bottom: 50px;  
-        width: 850px;
+        font-size: 2rem; 
+        margin-bottom: 5rem;  
+        width: 85rem;
     }
 
 
@@ -26,14 +27,14 @@
         line-height: 3px;
         background-color: #6387EB;
         border-style: none;
-        border-radius: 50px;
-        height: 32.18px;
-        width: 300px;
+        border-radius: 5rem;
+        height: 3.218rem;
+        width: 30rem;
         color: #ffffff;
-        padding: 30px;
-        font-size: 30px;
+        padding: 3rem;
+        font-size: 3rem;
         font-weight: 400;
-        margin-bottom: 30px;
+        margin-bottom: 3rem;
 
         &:focus{
             outline: none;   
@@ -42,6 +43,6 @@
 
     &__subtext{
         color: #98A3BD;
-        font-size: 18px;
+        font-size: 1.8rem;
     }
 }
