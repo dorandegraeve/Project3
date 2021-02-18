@@ -60,11 +60,8 @@ export default () => {
             <div className="Content">
                 {contentLefts.map(contentLeft => (
                 <ContentLeft 
-                    Titel ={contentLeft.Titel}
-                    Titel2 ={contentLeft.Titel2}
+                    Titel ={contentLeft.Titel}    
                     Ondertitel={contentLeft.Ondertitel}
-                    Ondertitel2={contentLeft.Ondertitel2}
-                    // url={contentLeft.Image[0] && contentLeft.Image[0].url}
                 />
                 ))}
             </div>
