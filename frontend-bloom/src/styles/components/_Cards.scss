@@ -10,21 +10,25 @@
     font-size: 52px;
     color: #444f6b;
     text-align: center;
+    margin-bottom: 10rem;
+    margin-top: 20rem;
   }
   .Card {
-    min-width: 400px;
-    max-width: 400px;
+    width: 30rem;
+    min-width: 25rem;
+    
     margin: 0 50px 0 50px;
     display: flex;
     flex-direction: column;
     margin-bottom: 50px;
   
     span{
-      font-size: 24px;
+      font-size: 18px;
       color: #444f6b;
-      margin-top: 65px;
-      font-weight: 450;
+      margin-top: 5rem;
+      font-weight: 500;
       line-height: 35px;
+
       @include respond(phone) { 
         display: none;
     }
@@ -39,21 +43,21 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 275px;
+      height: 20rem;
       background-color: white;
       border-radius: 10px 10px 0px 0px;
       }
   
   
     .Card__Achtergrond {
-      height: 135px;
+      height: 11rem;
       display: flex;
       justify-content: center;
       align-items: center;
       font-size: 20px;
-      font-weight: 700;
+      font-weight: 500;
       color: #98a3bd;
-      font-size: 28px;
+     
       
       }
   
