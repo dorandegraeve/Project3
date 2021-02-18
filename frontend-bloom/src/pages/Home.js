@@ -24,7 +24,7 @@ export default () => {
 
     useEffect(() => {
         const getContentLefts = async () => {
-        const response = await fetch('http://localhost:1337/contents')
+        const response = await fetch('http://localhost:1337/content-lefts')
         const data = await response.json()
         setContentLefts(data)
         }

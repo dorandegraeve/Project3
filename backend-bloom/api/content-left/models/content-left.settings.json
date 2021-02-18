@@ -27,12 +27,6 @@
       ],
       "plugin": "upload",
       "required": false
-    },
-    "Titel2": {
-      "type": "string"
-    },
-    "Ondertitel2": {
-      "type": "richtext"
     }
   }
 }

@@ -6,29 +6,24 @@
     &__titel{
         font-size: 80px;  
         font-weight: 700;
+        width: 450px;
     }
 
-    &__titel2{
-        font-size: 80px;  
-        font-weight: 700;
-        margin-bottom: 40px;
-    }
+
 
     &__ondertitel{
         font-size: 22px; 
+        margin-bottom: 50px;  
+        width: 850px;
     }
 
-    &__ondertitel2{
-        font-size: 22px;
-        margin-bottom: 50px;  
-    }
 
     &__button{
         text-align: center;
         line-height: 3px;
         background-color: #6387EB;
         border-style: none;
-        border-radius: 21.09px;
+        border-radius: 50px;
         height: 32.18px;
         width: 300px;
         color: #ffffff;
@@ -36,6 +31,10 @@
         font-size: 30px;
         font-weight: 400;
         margin-bottom: 30px;
+
+        &:focus{
+            outline: none;   
+           }
     }
 
     &__subtext{
