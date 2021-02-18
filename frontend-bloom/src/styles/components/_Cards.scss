@@ -16,7 +16,7 @@
   .Card {
     width: 30rem;
     min-width: 25rem;
-    
+    flex-wrap: wrap;
     margin: 0 50px 0 50px;
     display: flex;
     flex-direction: column;
