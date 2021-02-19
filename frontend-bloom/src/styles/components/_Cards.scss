@@ -8,7 +8,7 @@
   }
   }
   .titel {
-    font-size: 52px;
+    font-size: 5.2rem;
     color: #444f6b;
     text-align: center;
     margin-bottom: 10rem;
@@ -18,17 +18,17 @@
     width: 30rem;
     min-width: 25rem;
     flex-wrap: wrap;
-    margin: 0 50px 0 50px;
+    margin: 0 5rem 0 5rem;
     display: flex;
     flex-direction: column;
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
   
     span{
-      font-size: 18px;
+      font-size: 1.8rem;
       color: #444f6b;
       margin-top: 5rem;
       font-weight: 500;
-      line-height: 35px;
+      line-height: 3.5rem;
 
       @include respond(phone) { 
         display: none;
@@ -37,8 +37,8 @@
     
   
     .Card__body {
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-      border-radius: 10px 10px 10px 10px;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 2.4rem;
+      border-radius: 1rem 1rem 1rem 1rem;
   
       .Card__Top {
       display: flex;
@@ -46,7 +46,7 @@
       align-items: center;
       height: 20rem;
       background-color: white;
-      border-radius: 10px 10px 0px 0px;
+      border-radius: 1rem 1rem 0px 0px;
       }
   
   
@@ -55,7 +55,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 500;
       color: #98a3bd;
      
