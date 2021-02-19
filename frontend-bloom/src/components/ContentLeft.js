@@ -6,13 +6,23 @@ const API_URL = 'http://localhost:1337'
 const formatImageUrl = (url) => `${API_URL}${url}`
 
 
-export default({Titel, Ondertitel}) => {
+
+export default({Titel, Ondertitel, url1, url2, url3, url4}) => {
     return(
-        <div>
-            <div className="Content__titel">{Titel}</div>
-            <div className="Content__ondertitel">{Ondertitel}</div>
-            <button className="Content__button" type="button">Probeer nu</button>
-            <p className="Content__subtext">Probeer Bloom gratis voor 14 dagen.</p>
+        <div className ="content">
+            <div className="content__links">
+                <div className="content__titel">{Titel}</div>
+                <div className="content__ondertitel">{Ondertitel}</div>
+                <button className="content__button" type="button">Probeer nu</button>
+                <p className="content__subtext">Probeer Bloom gratis voor 14 dagen.</p>
+            </div>
+            <div className="content__rechts">
+                <img className ="content__foto1" src={formatImageUrl(url1)} />
+                <img className ="content__foto2" src={formatImageUrl(url2)} />
+                <img className ="content__foto3" src={formatImageUrl(url3)} />
+                <img className ="content__foto4" src={formatImageUrl(url4)} />
+            </div>
+            
         </div>
     )
 }
