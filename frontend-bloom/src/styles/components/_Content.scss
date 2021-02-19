@@ -1,10 +1,11 @@
-.Content{
+.content{
     margin-top: 54.5rem;
-    margin-left: 10.5rem;
     color: #444f6b;
-    width: 50.5rem;
-    
+    display: flex;
+    height: 100rem;
 
+    
+    
     &__titel{
         font-size: 8rem;  
         font-weight: 700;
@@ -18,7 +19,7 @@
     &__ondertitel{
         font-size: 2rem; 
         margin-bottom: 5rem;  
-        width: 80rem;
+        
     }
 
 
@@ -29,20 +30,78 @@
         border-style: none;
         border-radius: 5rem;
         height: 3.218rem;
-        width: 30rem;
+        width: 25rem;
         color: #ffffff;
-        padding: 3rem;
-        font-size: 3rem;
+        padding: 2.5rem;
+        font-size: 2.5rem;
         font-weight: 400;
         margin-bottom: 3rem;
+        cursor: pointer;
 
         &:focus{
             outline: none;   
            }
+
+        
     }
 
     &__subtext{
         color: #98A3BD;
         font-size: 1.8rem;
+    }
+
+    &__links{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        
+        padding-left: 10rem;
+        flex: 0 0 40%;
+        
+    }
+
+    &__rechts{
+        position: relative;
+        flex: 0 0 60%;
+        overflow: hidden;
+        transform: scale(1.3);
+        
+
+        .content__foto1{           
+            position: absolute;
+            z-index: 0;
+            right: -15rem;
+            top: 15rem;
+            right: 2rem;
+            
+            
+
+        }
+        .content__foto2{
+            position: absolute;
+            z-index: 1;
+            right: -5rem;
+            
+        }
+        .content__foto3{
+            position: absolute;
+            z-index: 2;
+            top: 43rem;
+            right: 50rem;
+        }
+        .content__foto4{
+            position: absolute;
+            z-index: 4;
+            bottom: 30rem;
+            right: 18rem;
+            height: 17%;
+            -moz-transform: skew(0deg, -10.5deg);
+            -webkit-transform: skew(0deg, -10.5deg);
+            -o-transform: skew(0deg, -10.5deg);
+            -ms-transform: skew(0deg, -10.5deg);
+            transform: skew(0deg, -10.5deg);
+        }
+
+       
     }
 }
