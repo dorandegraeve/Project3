@@ -14,10 +14,13 @@
     "title": {
       "type": "string"
     },
-    "paragraphs": {
-      "type": "component",
-      "repeatable": true,
-      "component": "blog.paragraph"
+    "page_contents": {
+      "type": "dynamiczone",
+      "components": [
+        "blog.paragraph-with-pictures",
+        "blog.paragraph",
+        "blog.quote"
+      ]
     }
   }
 }

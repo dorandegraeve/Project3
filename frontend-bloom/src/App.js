@@ -18,7 +18,7 @@ function App() {
 
     useEffect(() => {
         const getNavigaties = async () => {
-        const response = await fetch('http://localhost:1337/navigaties')
+        const response = await fetch('http://localhost:1337/pages')
         const data = await response.json()
         setNavigaties(data)
         }
@@ -39,7 +39,7 @@ function App() {
           <div className="Navigatie__items">
           {navigaties.map(navigatie => (
               <Navigatie__item 
-                  navigatie={navigatie.NavigatieLink}
+                  navigatie={navigatie.title}
               />
               ))}
           </div>
