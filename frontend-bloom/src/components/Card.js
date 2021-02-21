@@ -9,12 +9,12 @@ export default ({Beschrijving, Tekstje, url}) => {
 
     return(
         
-        <div className="Card">
-            <div className="Card__body">
-                <div className="Card__Top">
-                    <img className="Card__Image" src={formatImageUrl(url)} />  
+        <div className="card">
+            <div className="card__body">
+                <div className="card__top">
+                    <img className="card__image" src={formatImageUrl(url)} />  
                 </div>
-                <div className="Card__Achtergrond">
+                <div className="card__achtergrond">
                     <div>{Tekstje}</div>
                     
                 </div>
