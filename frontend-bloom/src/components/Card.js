@@ -9,7 +9,7 @@ export default ({Beschrijving, Tekstje, url}) => {
 
     return(
         
-        <div className="Card">
+        <div className="card">
             <div className="Card__body">
                 <div className="Card__Top">
                     <img className="Card__Image" src={formatImageUrl(url)} />  
