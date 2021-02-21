@@ -1,12 +1,12 @@
-.Kaartjes {
+.kaartjes {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     @include respond(tab-port) { 
       flex-direction: column;
       align-items: center;
-  }
-  }
+    }
+  
   .titel {
     font-size: 5.2rem;
     color: #444f6b;
@@ -22,6 +22,32 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 5rem;
+
+    &__body {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 2.4rem;
+      border-radius: 1rem 1rem 1rem 1rem;
+  
+    &__top {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20rem;
+      background-color: white;
+      border-radius: 1rem 1rem 0px 0px;
+    }
+  
+  
+    &__achtergrond {
+      height: 11rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 2rem;
+      font-weight: 500;
+      color: #98a3bd;
+    }
+  
+  }
   
     span{
       font-size: 1.8rem;
@@ -32,36 +58,7 @@
 
       @include respond(phone) { 
         display: none;
-    }
-  }
-    
-  
-    .Card__body {
-      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 2.4rem;
-      border-radius: 1rem 1rem 1rem 1rem;
-  
-      .Card__Top {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 20rem;
-      background-color: white;
-      border-radius: 1rem 1rem 0px 0px;
       }
-  
-  
-    .Card__Achtergrond {
-      height: 11rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-size: 2rem;
-      font-weight: 500;
-      color: #98a3bd;
-     
-      
-      }
-  
-  
+    } 
   }
-  }
+}

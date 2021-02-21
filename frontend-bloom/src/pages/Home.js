@@ -72,7 +72,7 @@ export default () => {
 
             <h1 className="titel">Onze visie</h1>
 
-            <div className="Kaartjes">
+            <div className="kaartjes">
                 {cards.map(card => (
                 <Card 
                     Tekstje ={card.Tekstje}
@@ -81,9 +81,7 @@ export default () => {
                 />
                 ))}
             </div>
-
-            
-
+        
             <Nieuwsbrief/>
         </div>
     )
