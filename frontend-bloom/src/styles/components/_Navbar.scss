@@ -1,10 +1,10 @@
-.Navigatie {
+.navigatie {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 5% 0 5%;
-    background-color: #ffffff;
-    color: #444F6B;
+    background-color: $color-white-2;
+    color: $color-blue-2;
     height: 12rem;
     font-weight: 500;
     font-size: 2.2rem;
@@ -14,12 +14,12 @@
       display: flex;
       align-items: center;
 
-      &--img{
+      &-img{
         height: 5rem;
         width: auto;
-        margin-right: 20px;
+        margin-right: 2rem;
       }
-      &--titel {
+      &-titel {
         font-weight: 700;
       }
     }
@@ -33,11 +33,12 @@
     &__item {
      
       .active {
-        color: #6387EB;
+        color: $color-blue-1;
+        //Navlink maakt automatisch deze klasse aan wanneer je op die pagina bent
       }
       a {
         text-decoration: none;
-        color: #444F6B;
+        color: $color-blue-2;
         
       }
     }

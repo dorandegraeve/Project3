@@ -6,8 +6,8 @@ export default ({navigatie}) => {
 
     
     return (
-        <div className="Navigatie__item">
-            <NavLink to={'/' + navigatie} exact>{navigatie}</NavLink>
+        <div className="navigatie__item">
+            <NavLink className=""to={'/' + navigatie} exact>{navigatie}</NavLink>
             
         </div>  
     )

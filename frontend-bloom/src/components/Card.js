@@ -21,7 +21,7 @@ export default ({Beschrijving, Tekstje, url}) => {
                     
                 </div>
             </div>
-            <span>{Beschrijving}</span>
+            <span className="card__beschrijving">{Beschrijving}</span>
         </div>
 
     )

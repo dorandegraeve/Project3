@@ -32,11 +32,11 @@ function App() {
 
       
       <BrowserRouter>
-        <div className="Navigatie">
+        <div className="navigatie">
           
           <Navigatie__logo />
 
-          <div className="Navigatie__items">
+          <div className="navigatie__items">
           {navigaties.map(navigatie => (
               <Navigatie__item 
                   navigatie={navigatie.title}

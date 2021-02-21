@@ -7,9 +7,9 @@ export default () => {
 
     
     return (
-        <div className="Navigatie__logo">
-            <img className="Navigatie__logo--img" src={logo} alt="Logo" />
-            <div className="Navigatie__logo--titel">
+        <div className="navigatie__logo">
+            <img className="navigatie__logo-img" src={logo} alt="Logo" />
+            <div className="navigatie__logo-titel">
                 BLOOM
             </div>
             

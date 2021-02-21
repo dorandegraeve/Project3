@@ -2,16 +2,19 @@
 ///////ABSTRACTS
 
 @import "./abstracts/mixins";
+@import "./abstracts/variables";
 
 
 /////////////////////////////////
 ///////COMPONENTS
 
-@import "./components/Navbar";
-@import "./components/Cards";
-@import "./components/Video";
-@import "./components/Nieuwsbrief";
-@import "./components/Content";
+@import "./components/navbar";
+@import "./components/cards";
+@import "./components/video";
+@import "./components/nieuwsbrief";
+@import "./components/content";
+@import "./components/title";
+@import "./components/button";
 
 /////////////////////////////////
 ///////BASE
