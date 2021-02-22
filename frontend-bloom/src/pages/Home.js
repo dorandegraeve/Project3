@@ -47,9 +47,9 @@ export default () => {
 
 
     return (
-        <div className="Home">
+        <div className="home">
            
-            <div className="Video__container">
+            <div className="video__container">
                 {videos.map(video => (
                 <Video 
                 url={video.url}  
@@ -63,9 +63,9 @@ export default () => {
                     Titel ={contentLeft.Titel}    
                     Ondertitel={contentLeft.Ondertitel}
                     url1={contentLeft.Image1 && contentLeft.Image1.url}
-                    url2={contentLeft.Image2 && contentLeft.Image2.url}
-                    url3={contentLeft.Image3[0] && contentLeft.Image3[0].url}
-                    url4={contentLeft.Image4[0] && contentLeft.Image4[0].url}
+                    // url2={contentLeft.Image2 && contentLeft.Image2.url}
+                    // url3={contentLeft.Image3[0] && contentLeft.Image3[0].url}
+                    // url4={contentLeft.Image4[0] && contentLeft.Image4[0].url}
                 />
                 ))}
             
