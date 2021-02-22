@@ -18,12 +18,12 @@ export default({Titel, Ondertitel, url1, url2, url3, url4}) => {
                 </div>
                 <p className="content__subtext">Probeer Bloom gratis voor 14 dagen.</p>
             </div>
-            {/* <div className="content__rechts">
+            <div className="content__rechts">
                 <img className ="content__foto1" src={formatImageUrl(url1)} />
-                <img className ="content__foto2" src={formatImageUrl(url2)} />
+                {/* <img className ="content__foto2" src={formatImageUrl(url2)} />
                 <img className ="content__foto3" src={formatImageUrl(url3)} />
-                <img className ="content__foto4" src={formatImageUrl(url4)} />
-            </div> */}
+                <img className ="content__foto4" src={formatImageUrl(url4)} /> */}
+            </div>
             
         </div>
     )

@@ -1,5 +1,5 @@
 .content{
-    margin-top: 54.5rem;
+    margin-top: 10rem;
     color: $color-blue-2;
     display: flex;
     height: 100rem;
@@ -34,53 +34,19 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-left: 10rem;
+        padding-left: 13.8rem;
         flex: 0 0 40%;
         
     }
 
     &__rechts{
-        position: relative;
-        flex: 0 0 60%;
-        overflow: hidden;
-        transform: scale(1.3);
+
     }
         
-/*
+
         &__foto1{           
             position: absolute;
-            z-index: 0;
-            right: -15rem;
-            top: 15rem;
-            right: 2rem;
-            
-            
-
+            right: 0;
         }
-        &__foto2{
-            position: absolute;
-            z-index: 1;
-            right: -5rem;
-            
-        }
-        &__foto3{
-            position: absolute;
-            z-index: 2;
-            top: 43rem;
-            right: 50rem;
-        }
-        &__foto4{
-            position: absolute;
-            z-index: 4;
-            bottom: 30rem;
-            right: 18rem;
-            height: 17%;
-            -moz-transform: skew(0deg, -10.5deg);
-            -webkit-transform: skew(0deg, -10.5deg);
-            -o-transform: skew(0deg, -10.5deg);
-            -ms-transform: skew(0deg, -10.5deg);
-            transform: skew(0deg, -10.5deg);
-        }
-
-       */
+   
     }
