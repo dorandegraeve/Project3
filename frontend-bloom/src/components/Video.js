@@ -8,14 +8,14 @@ import ReactPlayer from 'react-player'
 export default ({url}) => {
 
     return (
-        <div className="Video">
+        <div className="video">
           <div className="player-wrapper">
             <ReactPlayer
               className="react-player" 
               url={url}
               controls = "true"
-              width='90%'
-              height='100%'
+              width='75%'
+              height='75%'
             />
           </div>
           
