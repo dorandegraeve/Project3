@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_bloom_titles",
+  "info": {
+    "name": "Title",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    }
+  }
+}

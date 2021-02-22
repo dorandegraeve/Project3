@@ -17,9 +17,10 @@
     "page_contents": {
       "type": "dynamiczone",
       "components": [
-        "blog.paragraph-with-pictures",
-        "blog.paragraph",
-        "blog.quote"
+        "bloom.cards",
+        "bloom.content-left",
+        "bloom.title",
+        "bloom.video"
       ]
     }
   }

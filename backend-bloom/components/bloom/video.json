@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_bloom_videos",
+  "info": {
+    "name": "Video",
+    "icon": "tv"
+  },
+  "options": {},
+  "attributes": {
+    "Video_url": {
+      "type": "string"
+    }
+  }
+}
