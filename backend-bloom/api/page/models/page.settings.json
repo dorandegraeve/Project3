@@ -2,8 +2,7 @@
   "kind": "collectionType",
   "collectionName": "pages",
   "info": {
-    "name": "page",
-    "description": ""
+    "name": "Page"
   },
   "options": {
     "increments": true,
@@ -11,16 +10,16 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "title": {
+    "PageName": {
       "type": "string"
     },
-    "page_contents": {
+    "slug": {
+      "type": "uid",
+      "targetField": "PageName"
+    },
+    "DynamicZone": {
       "type": "dynamiczone",
-      "components": [
-        "blog.paragraph-with-pictures",
-        "blog.paragraph",
-        "blog.quote"
-      ]
+      "components": []
     }
   }
 }
