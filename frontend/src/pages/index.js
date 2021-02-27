@@ -3,6 +3,7 @@ import {graphql} from 'gatsby'
 import Layout from "../components/layout"
 import Video from "../components/video"
 import Card from "../components/card"
+import Nieuwsbrief from "../components/nieuwsbrief"
 
 
 const IndexPage = ({ data}) => (
@@ -11,7 +12,7 @@ const IndexPage = ({ data}) => (
   
     {data.allStrapiVideo.nodes.map(video => (
       <Video 
-      videoSrcURL= {video.videoUrl}/>
+      />
     ))}
   <div className="card__container">
     {data.allStrapiCard.nodes.map(kaart => (
@@ -22,6 +23,7 @@ const IndexPage = ({ data}) => (
         />
       ))}
   </div>
+      <Nieuwsbrief />
    
    
  </Layout>

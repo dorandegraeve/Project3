@@ -1,11 +1,11 @@
 
 import React from "react"
 
-const Video = ({   videoSrcURL, ...props}) => (
+const Video = () => (
     
   <div className="video">
     <iframe
-      src={videoSrcURL}
+      src="https://www.youtube.com/watch?v=amawIonCXTQ"
       title="Video"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
       frameBorder="0"
