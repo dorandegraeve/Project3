@@ -1,0 +1,12 @@
+.navigatie {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 10vh;
+    background-color: $color-white-2;
+    color: $color-blue-2;
+    &__item {
+        padding-right: 5rem;
+        font-size: 2.2rem;
+    }
+}
