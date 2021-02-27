@@ -2,12 +2,12 @@ import React from "react"
 import Layout from "../components/layout"
 // import Video from "../components/video"
 
-const PrijzenPage = () => (
+const ProductPage = () => (
   <Layout>
-    <h1>Prijzen pagina</h1>
+    <h1>Product pagina</h1>
 
   </Layout>
 )
 
-export default PrijzenPage
+export default ProductPage
 
