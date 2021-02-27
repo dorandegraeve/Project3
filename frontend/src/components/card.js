@@ -6,7 +6,7 @@ const Card = ({title, content, url}) => (
   <div className="card">
         <div className="card__body">
             <div className="card__image">
-                <Img  className="card__image--item" fluid={url}  />  
+                <Img  className="card__image--item" fixed={url}  />  
             </div>
             
             <div className="card__title">

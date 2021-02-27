@@ -24,7 +24,7 @@ const IndexPage = ({ data}) => (
         <Card 
           title = {kaart.cardTitle}
           content = {kaart.cardContent}
-          url = {kaart.cardImage.childImageSharp.fluid}
+          url = {kaart.cardImage.childImageSharp.fixed}
         />
       ))}
   </div>
@@ -47,8 +47,8 @@ export const query = graphql`
         cardContent
         cardImage {
           childImageSharp {
-            fluid {
-              ...GatsbyImageSharpFluid
+            fixed {
+              ...GatsbyImageSharpFixed
             }
           }
         }
