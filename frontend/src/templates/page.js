@@ -55,13 +55,7 @@
 //           TestTitle
 //           CardContent
 //           CardTitle
-//           CardImage {
-//             childImageSharp {
-//               fluid {
-//                 ...GatsbyImageSharpFluid
-//               }
-//             }
-//           }
+//           
 //         }
 //       }
 //     }
