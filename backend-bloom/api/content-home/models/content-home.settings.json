@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "cards",
+  "collectionName": "content_homes",
   "info": {
-    "name": "card",
+    "name": "ContentHome",
     "description": ""
   },
   "options": {
@@ -11,18 +11,21 @@
     "draftAndPublish": true
   },
   "attributes": {
-    "cardTitle": {
+    "title": {
       "type": "string"
     },
-    "cardContent": {
+    "content": {
       "type": "richtext"
     },
-    "cardImage": {
+    "span": {
+      "type": "string"
+    },
+    "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "files",
         "images",
+        "files",
         "videos"
       ],
       "plugin": "upload",

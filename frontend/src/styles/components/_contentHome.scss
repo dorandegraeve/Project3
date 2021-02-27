@@ -1,0 +1,37 @@
+.contentHomePage{
+        margin-top: 10rem;
+        color: $color-blue-2;
+        display: flex;
+        height: 100rem;
+
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 13.8rem;
+        flex: 0 0 40%;
+    
+        &__title{
+            font-size: 8rem;  
+            font-weight: 700;
+            width: 45rem;
+            line-height: 1.2;
+            margin-bottom: 3rem;
+        }
+        
+        &__content{
+            font-size: 2rem; 
+            margin-bottom: 5rem;  
+            
+        }
+        &__span{
+            color: $color-grey-1;
+            font-size: 1.8rem;
+        }
+    }
+    
+    
+}
+
+
