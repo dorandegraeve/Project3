@@ -9,11 +9,16 @@ import Nieuwsbrief from "../components/nieuwsbrief"
 const IndexPage = ({ data}) => (
     console.log("data",data),
  <Layout>
-  
-    {data.allStrapiVideo.nodes.map(video => (
-      <Video 
+   {data.allStrapiVideo.nodes.map(video => (
+        <Video 
+          videoSrcURL={video.videoUrl}
+         
       />
-    ))}
+      ))}
+    <Video 
+      videoSrcURL={data.allStrapiVideo.nodes.videoUrl}
+      videoTitle="Official Music Video on YouTube"
+    />
   <div className="card__container">
     {data.allStrapiCard.nodes.map(kaart => (
         <Card 
