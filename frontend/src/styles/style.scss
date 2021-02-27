@@ -1,0 +1,20 @@
+/////////////////////////////////
+///////ABSTRACTS
+
+@import "./abstracts/mixins";
+@import "./abstracts/variables";
+
+
+/////////////////////////////////
+///////COMPONENTS
+@import "./components/navbar";
+
+
+/////////////////////////////////
+///////BASE
+
+@import "./base/base";
+
+
+
+@import "~bootstrap/scss/bootstrap";
