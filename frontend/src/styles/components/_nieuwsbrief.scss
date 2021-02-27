@@ -1,0 +1,49 @@
+.nieuwsbrief{
+    text-align: center;
+
+    &__titel{
+        margin-top: 70rem;
+        font-size: 8rem;
+        color: $color-blue-2;
+    }
+
+    &__tekst{
+        font-size: 2rem;
+        margin-top: 4rem;
+        margin-bottom: 2.5rem;
+        font-weight: 400;
+        color: $color-blue-2;
+    }
+
+    &__formulier{
+        margin-bottom: 5rem;
+        
+       
+    }
+
+    &__field{
+       
+        width: 45rem;
+        height: 9em;
+        border-style: none;
+        border-radius: 1.5rem;
+
+        &::placeholder{
+            padding-left: 3.2rem;
+            padding-top: 1.5rem;
+            color: $color-grey-1;
+            font-size: 2rem;
+      
+        }
+
+        &:focus{
+            outline: none;   
+           }
+        
+    }
+
+    &__action {
+        position: absolute;
+    }
+    
+}
