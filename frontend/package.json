@@ -21,7 +21,6 @@
     "gatsby-remark-responsive-iframe": "^2.11.0",
     "gatsby-source-filesystem": "^2.11.0",
     "gatsby-source-strapi": "0.0.12",
-    "gatsby-transformer-remark": "^2.16.0",
     "gatsby-transformer-sharp": "^2.12.0",
     "node-sass": "^5.0.0",
     "prop-types": "^15.7.2",

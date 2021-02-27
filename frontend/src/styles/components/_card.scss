@@ -1,0 +1,32 @@
+.card {
+    width: 30rem;
+    min-width: 25rem;
+    
+    margin: 0 5rem 0 5rem;
+    display: flex;
+    
+    &__image {
+        width: 11rem;
+        height: 11rem;
+    }
+    
+    &__top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 20rem;
+        background-color: $color-white-2;
+        border-radius: 1rem 1rem 0px 0px;
+    }
+    &__content{
+        font-size: 1.8rem;
+        color: $color-blue-2;
+        margin-top: 5rem;
+        font-weight: 500;
+        line-height: 3.5rem;
+    
+        @include respond(phone) { 
+          display: none;
+        }
+      } 
+}
