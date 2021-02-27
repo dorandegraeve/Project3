@@ -11,6 +11,8 @@ module.exports = {
     "gatsby-remark-responsive-iframe",
     "gatsby-remark-prismjs",
     "gatsby-remark-images",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-transformer-remark",
       options: {

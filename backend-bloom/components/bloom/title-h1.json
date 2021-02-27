@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_bloom_title_h1s",
+  "info": {
+    "name": "TitleH1",
+    "icon": "list"
+  },
+  "options": {},
+  "attributes": {
+    "TitleH1": {
+      "type": "string"
+    }
+  }
+}

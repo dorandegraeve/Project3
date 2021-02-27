@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 
 const IndexPage = ({data}) => (
   <Layout>
-    {/* {console.log("test", data)}
+    {console.log("test", data)}
 
             <Video
               // videoSrcURL={data.strapiPage.Content.url}
@@ -25,7 +25,7 @@ const IndexPage = ({data}) => (
           </div>
           
           
-        ))} */}
+        ))}
 
   </Layout>
 )

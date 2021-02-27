@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_bloom_title_h2s",
+  "info": {
+    "name": "TitleH2",
+    "icon": "align-right"
+  },
+  "options": {},
+  "attributes": {
+    "TitleH2": {
+      "type": "string"
+    }
+  }
+}

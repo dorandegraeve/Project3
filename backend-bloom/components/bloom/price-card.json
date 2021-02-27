@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_bloom_price_cards",
+  "info": {
+    "name": "PriceCard",
+    "icon": "file-invoice-dollar"
+  },
+  "options": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "SubTitle": {
+      "type": "string"
+    },
+    "InterTitle": {
+      "type": "string"
+    },
+    "ListItem": {
+      "type": "string"
+    },
+    "Price": {
+      "type": "decimal"
+    }
+  }
+}

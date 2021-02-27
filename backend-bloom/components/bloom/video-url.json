@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_bloom_video_urls",
+  "info": {
+    "name": "VideoUrl",
+    "icon": "video"
+  },
+  "options": {},
+  "attributes": {
+    "VideoUrl": {
+      "type": "string"
+    }
+  }
+}
