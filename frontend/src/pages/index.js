@@ -5,13 +5,20 @@ import Layout from "../components/layout"
 
 const IndexPage = () => (
   <Layout>
-    Home Page
-  <h1>test</h1>
-  <h2>test</h2>
-  <h3>test</h3>
+   
   </Layout>
 )
 
 export default IndexPage
+export const query = graphql`
+query MyQuery {
+  allStrapiVideo {
+    nodes {
+      videoUrl
+    }
+  }
+}
 
+  
+`
 
