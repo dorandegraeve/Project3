@@ -64,7 +64,7 @@ module.exports = {
       options: {
         apiURL: 'http://localhost:1337',
         queryLimit: 10000,
-        contentTypes: ['page'],
+        contentTypes: ['page','video'],
       }
     },
     `gatsby-plugin-gatsby-cloud`,
