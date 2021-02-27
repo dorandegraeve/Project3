@@ -19,14 +19,14 @@
 //                 <h1>{data.strapiPage.PageName}</h1>
 //                     {data.strapiPage.DynamicZone.map(content => (
 //                     <div>
-//                        {/* <div>{content.CardImage[0].publicURL}</div> */}
+                       
 //                         <Test 
 //                           props ={content.TestTitle}
 //                         />
 //                         <Card 
 //                           title = {content.CardTitle}
 //                           content = {content.CardContent}
-//                           // img = {content.CardImage.publicURL}
+//                           url = {content.CardImage.childImageSharp.fluid}
                         
 //                           />
 //                         {/* <h3 className="test">{content.testtitle}</h3>
@@ -56,10 +56,9 @@
 //           CardContent
 //           CardTitle
 //           CardImage {
-//             publicURL
 //             childImageSharp {
 //               fluid {
-//                 src
+//                 ...GatsbyImageSharpFluid
 //               }
 //             }
 //           }

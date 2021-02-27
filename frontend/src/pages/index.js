@@ -13,14 +13,16 @@ const IndexPage = ({ data}) => (
       <Video 
       videoSrcURL= {video.videoUrl}/>
     ))}
-
+  <div className="card__container">
     {data.allStrapiCard.nodes.map(kaart => (
-      <Card 
-        title = {kaart.cardTitle}
-        content = {kaart.cardContent}
-        url = {kaart.cardImage.childImageSharp.fluid}
-      />
-    ))}
+        <Card 
+          title = {kaart.cardTitle}
+          content = {kaart.cardContent}
+          url = {kaart.cardImage.childImageSharp.fluid}
+        />
+      ))}
+  </div>
+   
    
  </Layout>
 )
