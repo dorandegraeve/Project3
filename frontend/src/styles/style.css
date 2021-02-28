@@ -1,0 +1,306 @@
+/*
+0 - 600px:          Phone
+600-900px:          Tablet portrait
+900-1200px:         Tablet landscape
+1200-1800px:        normaal scherm
+1800px+ :           groot scherm
+
+$breakpoint keuzes:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+1em = 16px
+
+*/
+.navigatie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 12rem;
+  background-color: #FFFFFF;
+  color: #444F6B;
+  font-size: 2.2rem;
+}
+
+.navigatie__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 6rem;
+}
+
+.navigatie__logo-image {
+  height: 5rem;
+  width: auto;
+  margin-right: 2rem;
+}
+
+.navigatie__logo-title {
+  font-weight: 700;
+}
+
+.navigatie__bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+}
+
+.navigatie__bar-item {
+  padding-right: 6rem;
+  list-style: none;
+  text-decoration: none;
+  color: #444F6B;
+}
+
+.navigatie__bar-item:hover {
+  text-decoration: none;
+  color: #444F6B;
+}
+
+.navigatie__bar-item--active {
+  color: #6387EB;
+}
+
+.navigatie__bar-item--active:hover {
+  color: #6387EB;
+}
+
+.card__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 56.25em) {
+  .card__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.card__container .card {
+  max-width: 40rem;
+  min-width: 40rem;
+  margin: 0 5rem 0 5rem;
+}
+
+.card__container .card__body {
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 2.4rem;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 2.4rem;
+  border-radius: 2rem;
+  margin-bottom: 2rem;
+}
+
+.card__container .card__image {
+  height: 27rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #FFFFFF;
+  border-radius: 2rem 2rem 0px 0px;
+}
+
+.card__container .card__image--item {
+  height: 15rem;
+  width: 15rem;
+}
+
+.card__container .card__title {
+  height: 13rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #98A3BD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__container .card__content {
+  font-size: 1.8rem;
+  color: #444F6B;
+  margin-top: 5rem;
+  font-weight: 500;
+  line-height: 3.5rem;
+}
+
+@media (max-width: 37.5em) {
+  .card__container .card__content {
+    display: none;
+  }
+}
+
+.nieuwsbrief {
+  text-align: center;
+}
+
+.nieuwsbrief__titel {
+  margin-top: 70rem;
+  font-size: 8rem;
+  color: #444F6B;
+}
+
+.nieuwsbrief__tekst {
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  color: #444F6B;
+}
+
+.nieuwsbrief__formulier {
+  margin-bottom: 5rem;
+}
+
+.nieuwsbrief__field {
+  width: 45rem;
+  height: 9em;
+  border-style: none;
+  border-radius: 1.5rem;
+}
+
+.nieuwsbrief__field::-webkit-input-placeholder {
+  padding-left: 3.2rem;
+  padding-top: 1.5rem;
+  color: #98A3BD;
+  font-size: 2rem;
+}
+
+.nieuwsbrief__field:-ms-input-placeholder {
+  padding-left: 3.2rem;
+  padding-top: 1.5rem;
+  color: #98A3BD;
+  font-size: 2rem;
+}
+
+.nieuwsbrief__field::-ms-input-placeholder {
+  padding-left: 3.2rem;
+  padding-top: 1.5rem;
+  color: #98A3BD;
+  font-size: 2rem;
+}
+
+.nieuwsbrief__field::placeholder {
+  padding-left: 3.2rem;
+  padding-top: 1.5rem;
+  color: #98A3BD;
+  font-size: 2rem;
+}
+
+.nieuwsbrief__field:focus {
+  outline: none;
+}
+
+.nieuwsbrief__action {
+  position: absolute;
+}
+
+.button {
+  cursor: pointer;
+  border-style: none;
+  color: #FFFFFF;
+  background-color: #6387EB;
+}
+
+.button--content {
+  text-align: center;
+  line-height: 3px;
+  border-radius: 5rem;
+  height: 3.218rem;
+  width: 25rem;
+  padding: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+.button--nieuwsbrief {
+  background-color: hotpink;
+  position: relative;
+  left: 93rem;
+  height: 9.3rem;
+  width: 9.3rem;
+  border-radius: 15px;
+}
+
+.button:focus {
+  outline: none;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto';
+  /*
+    @include respond(phone) {
+        font-size: 50%;
+    }*/
+}
+
+@media (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+body {
+  margin: auto;
+  background-color: #f6f8fd !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=style.css.map */

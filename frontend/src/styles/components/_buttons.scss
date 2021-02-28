@@ -19,8 +19,11 @@
         
     }
     &--nieuwsbrief{
-        position: relative;
-        left: 93rem;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        right: 0.2rem;
+        // left: 93rem;
         // margin-left: -9.3rem;
         height: 9.3rem;
         width: 9.3rem;
