@@ -1,10 +1,10 @@
 import React from "react"
 import Layout from "../components/layout"
-// import Video from "../components/video"
+import Pricecard from "../components/pricecard"
 
 const PrijzenPage = () => (
   <Layout>
-    <h1>Prijzen pagina</h1>
+    <Pricecard />
 
   </Layout>
 )
