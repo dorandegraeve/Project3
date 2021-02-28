@@ -1,0 +1,15 @@
+.priceCard-container {
+    display: flex;
+    justify-content: center;
+    .priceCard {
+        width: 40rem;
+        height: 60rem;
+        margin: 0 3rem 0 3rem;
+        background: rgb(110,121,229);
+        background: linear-gradient(347deg, rgba(110,121,229,1) 35%, rgba(35,42,106,1) 100%);
+        border-radius: 1.2rem;
+    }
+}
+
+
+
