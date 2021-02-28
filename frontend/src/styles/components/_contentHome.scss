@@ -29,8 +29,19 @@
             color: $color-grey-1;
             font-size: 1.8rem;
         }
+
     }
-    
+    .content__image {
+        position: relative;
+        width: 100%;
+        &-item {
+            position: absolute!important;
+            right: 0;
+            top: -10rem;
+            overflow: visible!important;
+           
+        }
+    }
     
 }
 
