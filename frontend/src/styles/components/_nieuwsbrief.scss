@@ -17,6 +17,8 @@
 
     &__formulier{
         margin-bottom: 5rem;
+        display: flex;
+        justify-content: center;
         
        
     }
@@ -24,7 +26,7 @@
     &__field{
        
         width: 45rem;
-        height: 9em;
+        height: 9.3rem;
         border-style: none;
         border-radius: 1.5rem;
 
@@ -43,7 +45,7 @@
     }
 
     &__action {
-        position: absolute;
+        position: relative;
     }
     
 }
