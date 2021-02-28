@@ -20,7 +20,7 @@
     "span": {
       "type": "string"
     },
-    "image": {
+    "contentHomeImage": {
       "model": "file",
       "via": "related",
       "allowedTypes": [

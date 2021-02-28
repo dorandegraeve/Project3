@@ -1,7 +1,8 @@
 import React from "react"
+import Img from 'gatsby-image'
 
 
-const ContentHome = ({title, content, span, button}) => (
+const ContentHome = ({title, content, span, button, url}) => (
     
   <div className="contentHomePage">
       <div className="content">
@@ -19,7 +20,7 @@ const ContentHome = ({title, content, span, button}) => (
         </span>
       </div>
       <div className="content__image">
-          
+          <Img className="content__image-item"fixed={url}></Img>
       </div>
         
   </div>

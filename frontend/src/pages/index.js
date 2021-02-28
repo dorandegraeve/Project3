@@ -26,6 +26,7 @@ const IndexPage = ({ data}) => (
           content = {content.content}
           span = {content.span}
           button = {content.buttonText}
+          url = {content.contentHomeImage.childImageSharp.fixed}
           />
         ))}
     
@@ -71,6 +72,13 @@ export const query = graphql`
         span
         content
         buttonText
+        contentHomeImage {
+          childImageSharp {
+            fixed (width: 800) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
       }
     }
 }
