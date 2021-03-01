@@ -30,6 +30,21 @@
             font-size: 1.8rem;
         }
 
+        &--right{
+            order: 1;
+        }
+
+        &--left{
+            order: 2;
+        }
+
+    }
+    .content--right{
+        order: 1;
+    }
+
+    .content--left{
+        order: 2;
     }
     .content__image {
         position: relative;
@@ -42,6 +57,15 @@
            
         }
     }
+
+    .content__image--right {
+        order: 2;
+    }
+
+    .content__image--right {
+        order: 1;
+    }
+
     
 }
 

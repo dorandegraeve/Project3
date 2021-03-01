@@ -12,14 +12,11 @@ const IndexPage = ({ data}) => (
  <Layout>
     {data.allStrapiVideo.nodes.map(video => (
           <Video 
-            videoSrcURL={video.videoUrl}
+            url={video.videoUrl}
           
         />
         ))}
-    <Video 
-      videoSrcURL={data.allStrapiVideo.nodes.videoUrl}
-      videoTitle="Official Music Video on YouTube"
-    />
+      
     {data.allStrapiContentHomes.nodes.map(content => (
           <ContentHome
           title = {content.title}
@@ -80,7 +77,20 @@ export const query = graphql`
           }
         }
       }
-    }
+    }   
+      allStrapiContent {
+        nodes {
+          title
+          text
+          image {
+            childImageSharp  {
+              fixed (width: 500){
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
+        }
+      }
 }
 `
 
