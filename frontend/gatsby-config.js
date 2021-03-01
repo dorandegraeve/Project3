@@ -10,8 +10,17 @@ module.exports = {
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
     {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+          endpoint: 'https://howest.us7.list-manage.com/subscribe/post?u=57c320b9e8609706fb5dc7d8b&amp;id=ea2f308a1b', // string; add your MC list endpoint here; see instructions below
+          timeout: 3500 // number; the amount of time, in milliseconds, that you want to allow mailchimp to respond to your request before timing out. defaults to 3500
+      },
+  },
+
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
+
         plugins: [`gatsby-remark-responsive-iframe`],
       },
     },
