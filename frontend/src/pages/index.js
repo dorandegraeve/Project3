@@ -7,14 +7,19 @@ import Nieuwsbrief from "../components/nieuwsbrief"
 import ContentHome from "../components/contentHome"
 
 
+
 const IndexPage = ({ data}) => (
     console.log("data",data),
  <Layout>
+   
     {data.allStrapiVideo.nodes.map(video => (
-          <Video 
+      <div className="video__container">
+        <Video 
             url={video.videoUrl}
           
         />
+      </div>
+          
         ))}
       
     {data.allStrapiContentHomes.nodes.map(content => (

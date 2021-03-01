@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "prices",
+  "info": {
+    "name": "price",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "users": {
+      "type": "string"
+    },
+    "admins": {
+      "type": "string"
+    },
+    "modules": {
+      "type": "string"
+    },
+    "moduleItem": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloom.module-item"
+    },
+    "popular": {
+      "type": "boolean",
+      "default": false
+    },
+    "subtitle": {
+      "type": "string"
+    }
+  }
+}

@@ -1,23 +1,28 @@
-
-import React from "react"
+import React from 'react'
 import ReactPlayer from 'react-player'
 
-const Video = ({url }) => (
-    
-  
-  
+
+
+
+
+export default ({url}) => {
+
+    return (
+      <div className="video-player">
+         <div className="video">
           <div className="player-wrapper">
             <ReactPlayer
               className="react-player" 
               url={url}
               controls = "true"
-              width='100%'
-              height='100%'
+              width='640px'
+              height='480px'
             />
           </div>
           
+        </div>  
+      </div>
+       
+    )
+}
     
-  
-)
-export default Video
-

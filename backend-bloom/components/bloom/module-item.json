@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_bloom_module_items",
+  "info": {
+    "name": "moduleItem",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "moduleItem": {
+      "type": "string"
+    },
+    "moduleImage": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
