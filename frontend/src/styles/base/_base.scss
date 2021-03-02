@@ -9,7 +9,7 @@
 html {
     //dit definieert wat 1rem is
     font-size: 62.5%; //1 rem = 10 px -> 10/16px = 62.5%
-    font-family: 'Roboto';
+    font-family: 'Ubuntu';
     /*
     @include respond(phone) {
         font-size: 50%;
@@ -26,6 +26,8 @@ html {
     @include respond(big-desktop) {
         font-size: 75%; //1rem = 12px, 12/16 = 75%
     }
+
+    @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
 }
 
 
