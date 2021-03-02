@@ -1,6 +1,8 @@
-.video{
-  display: flex;
-  justify-content: center;
+
+
+.video-player{
+  margin: 0 auto;
+  padding: 50px;
 }
 
 .player-wrapper {
@@ -9,8 +11,8 @@
   margin-top: 110px;
   display: flex;
   justify-content: center;
-  
-  
+
+
 }
 
 .react-player {
@@ -18,9 +20,7 @@
   overflow: hidden;
   position: absolute;
   top: 8%;
-  @include respond(tab-land) { 
+  @include respond(tab-land) {
       width: 100%!important;
   }
 }
-
-
