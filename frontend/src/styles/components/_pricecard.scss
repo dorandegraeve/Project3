@@ -1,11 +1,16 @@
 .priceCard-container {
     display: flex;
     justify-content: center;
+    margin-top: 5rem;
+
+
+    
     .priceCard-active {
         color: $color-white-2!important;
         background: rgb(110,121,229);
         background: linear-gradient(275deg, rgba(175,169,239,1) 0%, rgba(108,120,228,1) 100%);
-
+        padding: 2rem 4rem ;
+        
     }
 
     .priceCard {
@@ -15,21 +20,45 @@
         background-color:$color-white-2;
         border-radius: 1.2rem;
         color: $color-black-1;
-        padding: 2rem 4rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        font-weight: 300;
         display: flex;
         flex-direction: column;
         font-size: 2rem;
         position: relative;
+        box-sizing: border-box;
+        
+
+        &__top {
+            background-color: $color-white-1;
+            padding: 2rem 4rem 0 4rem;
+            border-radius: 1.2rem 1.2rem 0 0;
+        }
+
+        &__tag {
+            color: $color-blue-1;
+            position: absolute;
+            top: -3rem;
+            left: 0;
+            font-weight: 550;
+            font-size: 1.6rem;
+        }
+
+        &__bottom {
+            padding: 0 4rem 2rem 4rem;
+        }
         
        
         &__title{
-            font-size: 3.2rem;
+            font-size: 2.8rem;
             text-align: right;
+            font-weight: 400;
+            
            
         }
 
         &__subtitle{
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             display: inline;
             position: absolute;
             top: 2.5rem;
@@ -37,14 +66,23 @@
         &__price {
             font-size: 1.1rem;
             margin-left: -1rem;
-            padding-bottom: 5rem;
+            padding-bottom: 2rem;
             &--span{
                 font-size: 4rem;
                 font-weight: 600;
+                position: relative;
+            }
+            &--decimal{
+                position: absolute;
+                font-size: 1.8rem;
+                font-weight: 300;
+                top: -0.3rem;
+                right: -2.4rem;
             }
         }
 
         &__users {
+            margin-top: 2rem;
            & > li {
                display: flex;
            }
@@ -54,15 +92,24 @@
         }
 
         &__modules{
+            
 
             &-list {
+                
                 & > li {
                     display: flex;
                 }
             }
             &-title{
                 padding-bottom: 2.8rem;
+                font-weight: 400;
             }
+        }
+
+        &__button{
+            display: flex;
+            justify-content: center;
+            
         }
 
         ul {
