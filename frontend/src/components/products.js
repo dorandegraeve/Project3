@@ -1,13 +1,24 @@
-import React from "react"
+import React, { useEffect } from "react"
 import Img from 'gatsby-image'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
-const Product = ({title, text, subtitle, url, side}) => (
-    console.log("data",side),
-  <div className="product-container">
+
+
+
+const Product = ({title, text, subtitle, url, side}) => {
+    
+
+    useEffect(() => {
+        AOS.init({ duration: 2000});
+    }, []);
+
+    return(
+        <div className="product-container">
       
-      {side == true ? 
-      <div  className="product product--right">
+      {side === true ? 
+      <div  data-aos="fade-right" className="product product--right">
         <div className="product__subtitle">
               {subtitle}
         </div>
@@ -20,7 +31,7 @@ const Product = ({title, text, subtitle, url, side}) => (
             <button className="button button--product" type="button">Probeer nu</button>
       </div>
        : 
-      <div className="product product--left">
+      <div data-aos="fade-left" className="product product--left">
         <div className="product__subtitle">
               {subtitle}
         </div>
@@ -33,7 +44,7 @@ const Product = ({title, text, subtitle, url, side}) => (
             <button className="button button--product" type="button">Probeer nu</button>
       </div>}
       
-      {side == true ?
+      {side === true ?
       <div className="product__image product__image--right">
           <Img className="product__image-item"fixed={url}></Img>
       </div>
@@ -43,5 +54,9 @@ const Product = ({title, text, subtitle, url, side}) => (
       </div>}
         
   </div>
-)
+    )
+}
+    
+  
+
 export default Product
