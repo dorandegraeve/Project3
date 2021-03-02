@@ -1,10 +1,11 @@
 import React from "react"
 import {graphql} from 'gatsby'
 import Layout from "../components/layout"
-import Video from "../components/video"
+
 import Card from "../components/card"
 import Nieuwsbrief from "../components/nieuwsbrief"
 import ContentHome from "../components/contentHome"
+import Video from "../components/video"
 
 
 
