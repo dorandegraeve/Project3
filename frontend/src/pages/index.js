@@ -23,15 +23,14 @@ const IndexPage = ({ data}) => (
           
         ))}
       
-    {data.allStrapiContentHomes.nodes.map(content => (
-          <ContentHome
-          title = {content.title}
-          content = {content.content}
-          span = {content.span}
-          button = {content.buttonText}
-          url = {content.contentHomeImage.childImageSharp.fixed}
+    <ContentHome
+          title = {data.allStrapiContentHomes.nodes[0].title}
+          content = {data.allStrapiContentHomes.nodes[0].content}
+          span = {data.allStrapiContentHomes.nodes[0].span}
+          button = {data.allStrapiContentHomes.nodes[0].buttonText}
+          url = {data.allStrapiContentHomes.nodes[0].contentHomeImage.childImageSharp.fixed}
+          input = {data.allStrapiContentHomes.nodes[0].input}
           />
-        ))}
     
     <div className="card__container">
       {data.allStrapiCard.nodes.map(kaart => (
@@ -75,6 +74,7 @@ export const query = graphql`
         span
         content
         buttonText
+        input
         contentHomeImage {
           childImageSharp {
             fixed (width: 800) {

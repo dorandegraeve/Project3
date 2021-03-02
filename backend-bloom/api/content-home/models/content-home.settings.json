@@ -33,6 +33,10 @@
     },
     "buttonText": {
       "type": "string"
+    },
+    "input": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
