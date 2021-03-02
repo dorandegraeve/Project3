@@ -38,13 +38,12 @@ export default class IndexPage extends React.Component {
 
     render() {
         return (
-            <div>
+            <div className="nieuwsbrief__volledig">
                 <h1 className="nieuwsbrief nieuwsbrief__titel">Mis nooit een update</h1>
                 <p className="nieuwsbrief nieuwsbrief__tekst">Schrijf je in voor de Bloom nieuwsbrief</p>
                 <div>
                     <form className="nieuwsbrief__formulier" onSubmit={this._handleSubmit}>
                         <input
-                            
                             className="nieuwsbrief__field"
                             type="email"
                             onChange={this._handleChange}
