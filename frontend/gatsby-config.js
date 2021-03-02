@@ -38,7 +38,7 @@ module.exports = {
       options: {
         apiURL: 'http://localhost:1337',
         queryLimit: 10000,
-        contentTypes: ['page','video','card','content-homes', 'content'],
+        contentTypes: ['page','video','card','content-homes', 'content','price'],
       }
     },
     `gatsby-plugin-gatsby-cloud`,
