@@ -103,8 +103,8 @@ $breakpoint keuzes:
 }
 
 .card__container .card {
-  max-width: 40rem;
-  min-width: 40rem;
+  max-width: 37rem;
+  min-width: 37rem;
   margin: 0 5rem 0 5rem;
 }
 
@@ -135,11 +135,6 @@ $breakpoint keuzes:
           box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.card__container .card__body .btn-white {
-  background-color: #fff;
-  color: #777;
-}
-
 .card__container .card__body::after {
   content: "";
   display: inline-block;
@@ -154,18 +149,8 @@ $breakpoint keuzes:
   transition: all .4s;
 }
 
-.card__container .card__body .btn-white::after {
-  background-color: #fff;
-}
-
-.card__container .card__body:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
-}
-
 .card__container .card__image {
-  height: 27rem;
+  height: 25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,8 +542,11 @@ $breakpoint keuzes:
 }
 
 .contentHomePage .content__content {
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin-bottom: 5rem;
+  font-weight: 200;
+  width: 70rem;
+  line-height: 1.6;
 }
 
 .contentHomePage .content__span {
@@ -782,19 +770,33 @@ $breakpoint keuzes:
 
 .video-player {
   margin: 0 auto;
-  padding: 50px;
+  padding: 5rem;
+}
+
+@media (max-width: 37.5em) {
+  .video-player {
+    width: 100% !important;
+    padding: 5rem;
+  }
 }
 
 .player-wrapper {
   position: relative;
   padding-top: 56.25%;
-  margin-top: 110px;
+  margin-top: 11rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 37.5em) {
+  .player-wrapper {
+    width: 100% !important;
+    margin-top: 5rem;
+  }
 }
 
 .react-player {
@@ -804,7 +806,7 @@ $breakpoint keuzes:
   top: 8%;
 }
 
-@media (max-width: 75em) {
+@media (max-width: 37.5em) {
   .react-player {
     width: 100% !important;
   }
