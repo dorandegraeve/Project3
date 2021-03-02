@@ -214,7 +214,7 @@ $breakpoint keuzes:
   }
 }
 
-.nieuwsbrief {
+.nieuwsbrief__volledig {
   text-align: center;
 }
 
@@ -234,6 +234,11 @@ $breakpoint keuzes:
 }
 
 .nieuwsbrief__formulier {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 45rem;
   margin-bottom: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -244,7 +249,7 @@ $breakpoint keuzes:
 }
 
 .nieuwsbrief__field {
-  width: 45rem;
+  width: 100%;
   height: 9.3rem;
   border-style: none;
   border-radius: 1.5rem;
@@ -443,7 +448,7 @@ $breakpoint keuzes:
 .button--nieuwsbrief {
   z-index: 1;
   position: absolute;
-  right: 57rem;
+  right: 0;
   height: 9.3rem;
   width: 9.3rem;
   border-radius: 15px;
