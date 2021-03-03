@@ -6,6 +6,7 @@ import Pricecard from "../components/pricecard"
 const PrijzenPage = ({data}) => (
   console.log("data",data),
   <Layout>
+    <SEO title="Prijzen"/>
     <div className="priceCard-container">
       {data.allStrapiPrice.nodes.map(price => (
         <Pricecard

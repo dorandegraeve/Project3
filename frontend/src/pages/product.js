@@ -7,6 +7,7 @@ import Nieuwsbrief from "../components/nieuwsbrief"
 const ProductPage = ({data}) => (
   console.log("data", data),
   <Layout>
+    <SEO title="Product"/>
           <TekstImage 
           title = {data.strapiTekstImage.title}
           text = {data.strapiTekstImage.text}
