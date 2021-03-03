@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import {graphql} from 'gatsby'
 import Pricecard from "../components/pricecard"
+import SEO from "../components/seo"
 
 const PrijzenPage = ({data}) => (
   console.log("data",data),

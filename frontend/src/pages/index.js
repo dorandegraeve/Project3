@@ -6,6 +6,7 @@ import Card from "../components/card"
 import Nieuwsbrief from "../components/nieuwsbrief"
 import ContentHome from "../components/contentHome"
 import Video from "../components/video"
+import SEO from "../components/seo"
 
 
 

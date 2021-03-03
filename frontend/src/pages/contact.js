@@ -4,6 +4,7 @@ import ContentHome from "../components/contentHome"
 import {graphql} from 'gatsby'
 import Nieuwsbrief from "../components/nieuwsbrief"
 import Demo from "../components/demo"
+import SEO from "../components/seo"
 
 
 
