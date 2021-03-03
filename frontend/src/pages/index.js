@@ -31,8 +31,9 @@ const IndexPage = ({ data}) => (
           url = {data.allStrapiContentHomes.nodes[0].contentHomeImage.childImageSharp.fixed}
           input = {data.allStrapiContentHomes.nodes[0].input}
           />
-    
+    <h1 className="card__headtitle" >Onze visie</h1>
     <div className="card__container">
+      
       {data.allStrapiCard.nodes.map(kaart => (
           <Card 
             title = {kaart.cardTitle}

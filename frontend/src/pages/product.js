@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import Product from "../components/products"
 import TekstImage from "../components/tekstImage"
+import Nieuwsbrief from "../components/nieuwsbrief"
 
 const ProductPage = ({data}) => (
   console.log("data", data),
@@ -20,6 +21,8 @@ const ProductPage = ({data}) => (
           side = {content.rightSide}
           />
         ))}
+        <Nieuwsbrief/>
+
   </Layout>
 )
 
