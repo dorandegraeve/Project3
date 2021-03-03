@@ -39,9 +39,8 @@ export default class IndexPage extends React.Component {
     render() {
         return (
             <div className="demo__volledig">
-
                 <div>
-                    <form className="" onSubmit={this._handleSubmit}>
+                    <form className="demo__form" onSubmit={this._handleSubmit}>
                         <input
                             className="demo__field"
                             type="email"
@@ -54,8 +53,6 @@ export default class IndexPage extends React.Component {
                                 color: "#98A3BD" ,
                             }}
                         />
-                        <br />
-                        <br />
                         <input className ="button button--demo" type="submit" value="Verstuur code"/>
                     </form>
                 </div>

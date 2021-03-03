@@ -4,6 +4,7 @@
     margin-top: 5rem;
     @include respond(tab-land){
         flex-direction: column;
+        align-items: center;
     }
 
 

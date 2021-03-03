@@ -1,0 +1,16 @@
+.contact {
+    @include respond(phone) { 
+       margin-top: 20rem;
+        
+    }
+    .content {
+        &__title {
+            width: 100%;
+
+        }
+
+        &__content {
+            width:100%;
+        }
+    }
+}

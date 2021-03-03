@@ -84,6 +84,11 @@
 
     &__contact{
         margin-top: -30rem;
+        @include respond(tab-port) { 
+            margin-top: 20rem;
+         }
+
+
     }
 
     &__action {
