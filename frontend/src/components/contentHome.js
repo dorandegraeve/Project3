@@ -26,7 +26,10 @@ const ContentHome = ({title, content, span, button, url, input}) => (
                             }}
                         />
                     </form>
-              <button className="button button--content" type="button">{button}</button>
+            <div className="content__button">
+                <button className="button button--content" type="button">{button}</button>
+            </div>
+              
           
           <span className="content__span">
               {span}
@@ -47,7 +50,9 @@ const ContentHome = ({title, content, span, button, url, input}) => (
          {content}
       </div>
       
-          <button className="button button--content" type="button">{button}</button>
+            <div className="content__button">
+                <button className="button button--content" type="button">{button}</button>
+            </div>
       
       <span className="content__span">
           {span}

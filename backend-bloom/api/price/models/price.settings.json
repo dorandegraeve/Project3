@@ -15,7 +15,7 @@
       "type": "string"
     },
     "price": {
-      "type": "decimal"
+      "type": "integer"
     },
     "users": {
       "type": "string"

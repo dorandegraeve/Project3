@@ -1,0 +1,24 @@
+.burger {
+    width: 2rem;
+    height: 2rem;
+    position: fixed;
+    right: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column nowrap;
+    z-index:20;
+    display: none;
+
+    @include respond(tab-port) { 
+        display: flex;
+        justify-content: space-around;
+        flex-flow: column nowrap;
+        }
+    &__part {
+        border-radius: 10px;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+        width: 2rem;
+        height: 0.25rem;
+    }
+}

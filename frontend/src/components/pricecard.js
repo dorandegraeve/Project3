@@ -6,14 +6,13 @@ import Img from 'gatsby-image'
 
 const Pricecard = ({title, price, users, admins, modules, moduleItem, subtitle, popular}) => (
     console.log("module",moduleItem),
-    <div className="priceCard-container">
-        
-
-        {popular === true ?
+    <>
+             {popular === true ?
         <div className="priceCard priceCard-active">
+            <div className="priceCard__tag">POPULAIR</div>
         <div className="priceCard__subtitle">{subtitle}</div>
         <div className="priceCard__title">{title}</div>
-        <div className="priceCard__price"> <span className="priceCard__price--span">€ {price}</span> / gebruiker / maand</div>
+        <div className="priceCard__price"> <span className="priceCard__price--span">€ {price}<div className="priceCard__price--decimal">99</div></span> / gebruiker / maand</div>
         <ul className="priceCard__users">
             <li className="priceCard__users--user">
                 <div className="priceCard__users--image"><BsPeopleFill /></div>
@@ -31,14 +30,17 @@ const Pricecard = ({title, price, users, admins, modules, moduleItem, subtitle, 
             </ul>
         </div>
         <div className="priceCard__button">
-            <button className="button button--price button--price-active"> aan de slag</button>
+            <button className="button button--price button--price-active"> Aan de slag</button>
         </div>
         </div>
     :
         <div className="priceCard ">
-        <div className="priceCard__subtitle">{subtitle}</div>
-        <div className="priceCard__title">{title}</div>
-        <div className="priceCard__price"> <span className="priceCard__price--span">€ {price}</span> / gebruiker / maand</div>
+        <div className="priceCard__top">
+            <div className="priceCard__subtitle">{subtitle}</div>
+            <div className="priceCard__title">{title}</div>
+            <div className="priceCard__price"> <span className="priceCard__price--span">€ {price}<div className="priceCard__price--decimal">99</div></span> / gebruiker / maand</div>
+        </div>
+        <div className="priceCard__bottom">
         <ul className="priceCard__users">
             <li className="priceCard__users--user">
                 <div className="priceCard__users--image"><BsPeopleFill /></div>
@@ -56,12 +58,18 @@ const Pricecard = ({title, price, users, admins, modules, moduleItem, subtitle, 
             </ul>
         </div>
         <div className="priceCard__button">
-            <button className="button button--price button--price-active"> aan de slag</button>
+            <button className="button button--price"> Aan de slag</button>
         </div>
+        </div>
+       
     </div>
         }
         
-    </div>
+    </>
+        
+
+   
+   
     
 )
 export default Pricecard

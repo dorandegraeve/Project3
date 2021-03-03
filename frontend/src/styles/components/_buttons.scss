@@ -18,6 +18,13 @@
         margin-bottom: 3rem;
         transition: 0.2s ease-in;
 
+        @include respond(small-phone) { 
+            width: 15rem;
+            border-radius: 1rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
         &:link,
         &:visited {
         text-transform: uppercase;
@@ -223,6 +230,13 @@
         background-position: center;
         transition: 0.2s ease-in;
         cursor: pointer;
+        @include respond(phone) { 
+            height: 5rem;
+            width: 5rem; 
+            background-size: 25px 25px;
+            border-radius: 5px;
+            right: 3rem;
+        }
         
         &:link,
         &:visited {
@@ -283,5 +297,26 @@
     &:focus{
         outline: none;   
        }
+    &--price {
+        text-align: center;
+        line-height: 3px;
+        border-radius: 5rem;
+        height: 3.218rem;
+        width: 25rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5rem;
+        font-size: 2.5rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+        transition: 0.2s ease-in;
+        position: absolute;
+        bottom: 0;
+        &-active {
+            background-color: $color-white-2;
+            color: $color-blue-1;
+        }
+    }
 }
 
