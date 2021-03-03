@@ -13,7 +13,7 @@ const Navbar = () => {
         
         <Nav className="navigatie">
             <div className="navigatie__logo">
-                    <img className="navigatie__logo-image" src={logo}></img>
+                    <img className="navigatie__logo-image" src={logo}  alt="Bloom-Logo"></img>
                     <div className="navigatie__logo-title">BLOOM</div>
             </div>
             <Burger />
