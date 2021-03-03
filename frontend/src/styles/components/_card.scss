@@ -6,10 +6,26 @@
         flex-direction: column;
         align-items: center;
         }
+    
     .card {
         max-width: 37rem;
         min-width: 37rem;
         margin: 0 5rem 0 5rem;
+        @include respond(tab-port) { 
+            margin: 3rem;
+                }
+        @include respond(phone) { 
+            max-width: 25rem;
+            min-width: 25rem;
+            margin-top: 2rem;
+            }
+
+        @include respond(small-phone) { 
+            max-width: 20rem;
+            min-width: 20rem;
+            }
+
+        
 
         &__body {
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 2.4rem;
@@ -18,37 +34,12 @@
             transition: 0.2s ease-in;
 
 
-            &:link,
-            &:visited {
-                text-transform: uppercase;
-                text-decoration: none;
-                padding: 15px 40px;
-                display: inline-block;
-                border-radius: 100px;
-                transition: all .2s;
-                position: absolute;
-            }
+            
 
             &:hover {
                 transform: translateY(-10px);
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
             }
-
-
-            &::after {
-                content: "";
-                display: inline-block;
-                height: 100%;
-                width: 100%;
-                border-radius: 100px;
-                position: absolute;
-                top: 0;
-                left: 0;
-                z-index: -1;
-                transition: all .4s;
-            }
-
-
 
 
         }
@@ -59,11 +50,26 @@
             align-items: center;
             background-color: $color-white-2;
             border-radius: 2rem 2rem 0px 0px;
+            @include respond(phone) { 
+                height: 17rem;
+                }
+            @include respond(small-phone) { 
+                height: 15rem;
+                }
+            
 
 
             &--item{
                 height: 15rem;
                 width: 15rem;
+                @include respond(phone) { 
+                    transform: scale(0.7);
+                        }
+                @include respond(small-phone) { 
+                   transform: scale(0.5);
+                    }
+                
+              
             }
         }
 
@@ -75,6 +81,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            @include respond(phone) { 
+                height: 9rem;
+                font-size: 2rem;
+                font-weight: 500;
+                    }
+            @include respond(small-phone) { 
+                height: 6rem;
+                font-size: 2rem;
+                font-weight: 500;
+                }
+            
         }
 
         &__content {
