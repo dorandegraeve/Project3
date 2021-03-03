@@ -6,12 +6,15 @@ import Card from "../components/card"
 import Nieuwsbrief from "../components/nieuwsbrief"
 import ContentHome from "../components/contentHome"
 import Video from "../components/video"
+import SEO from "../components/seo"
 
 
 
 const IndexPage = ({ data}) => (
     console.log("data",data),
  <Layout>
+
+   <SEO title="Home"/>
    
     {data.allStrapiVideo.nodes.map(video => (
       <div className="video__container">
@@ -31,8 +34,9 @@ const IndexPage = ({ data}) => (
           url = {data.allStrapiContentHomes.nodes[1].contentHomeImage.childImageSharp.fixed}
           input = {data.allStrapiContentHomes.nodes[1].input}
           />
-    
+    <h1 className="card__headtitle" >Onze visie</h1>
     <div className="card__container">
+      
       {data.allStrapiCard.nodes.map(kaart => (
           <Card 
             title = {kaart.cardTitle}

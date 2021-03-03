@@ -3,13 +3,16 @@ import Layout from "../components/layout"
 import ContentHome from "../components/contentHome"
 import {graphql} from 'gatsby'
 import Nieuwsbrief from "../components/nieuwsbrief"
-import Demo from "../components/demo"
+
+import SEO from "../components/seo"
 
 
 
 const ContactPage = ({data}) => (
   console.log("contact", data.allStrapiContentHomes),
   <Layout>
+
+      <SEO title="Contact"/>
       <div className="contact">
         <ContentHome
           title = {data.allStrapiContentHomes.nodes[0].title}
@@ -18,7 +21,8 @@ const ContactPage = ({data}) => (
           button = {data.allStrapiContentHomes.nodes[0].buttonText}
           url = {data.allStrapiContentHomes.nodes[0].contentHomeImage.childImageSharp.fixed}
           input = {data.allStrapiContentHomes.nodes[0].input}
-          />
+          />      
+          
       </div>
         
 
