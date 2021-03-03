@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tekst-images",
+      "handler": "tekst-image.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tekst-images/count",
+      "handler": "tekst-image.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tekst-images/:id",
+      "handler": "tekst-image.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tekst-images",
+      "handler": "tekst-image.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tekst-images/:id",
+      "handler": "tekst-image.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tekst-images/:id",
+      "handler": "tekst-image.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
