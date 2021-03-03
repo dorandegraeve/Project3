@@ -52,29 +52,28 @@
         height: 9.3rem;
         border-style: none;
         border-radius: 1.5rem;
-        
-        @include respond(phone) { 
-            height: 5rem;
-            width: 80%;
-         }
 
-        
 
         &::placeholder{
-            // padding-left: 3.2rem;
-            // padding-top: 1.5rem;
             color: $color-grey-1;
+
+
             // font-size: 2rem;
             @include respond(phone) { 
                 height: 2rem;
                 width: 80%;
              }
+
         }
 
+        &:focus:invalid{
+            border-bottom: 3px solid #e12120;
+        }
         
-
         &:focus{
-            outline: none;   
+            outline: none;  
+            box-shadow: 0 1rem 2rem rgba(#000000, .1);
+            border-bottom: 3px solid $color-blue-1;
            }
         
     }

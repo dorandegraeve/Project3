@@ -1,0 +1,30 @@
+.demo{
+    &__volledig{
+        margin-left: 13.3rem;
+    }
+
+    &__field{
+        width: 59rem;
+        height: 10rem;
+        border-style: none;
+        border-radius: 1.5rem;
+        border-bottom: 3px solid transparent;
+        display: block;
+        margin-bottom: 3.5rem;
+
+        &::placeholder{
+            color: $color-grey-1;
+        }
+
+        &:focus:invalid{
+            border-bottom: 3px solid #e12120;
+        }
+        
+        &:focus{
+            outline: none;  
+            box-shadow: 0 1rem 2rem rgba(#000000, .1);
+            border-bottom: 3px solid $color-blue-1;
+           }
+    }
+
+}
