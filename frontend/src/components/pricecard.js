@@ -10,9 +10,13 @@ const Pricecard = ({title, price, users, admins, modules, moduleItem, subtitle, 
              {popular === true ?
         <div className="priceCard priceCard-active">
             <div className="priceCard__tag">POPULAIR</div>
-        <div className="priceCard__subtitle">{subtitle}</div>
+            <div className="priceCard__top">
+            <div className="priceCard__subtitle">{subtitle}</div>
         <div className="priceCard__title">{title}</div>
         <div className="priceCard__price"> <span className="priceCard__price--span">€ {price}<div className="priceCard__price--decimal">99</div></span> / gebruiker / maand</div>
+            </div>
+        
+        <div className="priceCard__bottom">
         <ul className="priceCard__users">
             <li className="priceCard__users--user">
                 <div className="priceCard__users--image"><BsPeopleFill /></div>
@@ -33,9 +37,10 @@ const Pricecard = ({title, price, users, admins, modules, moduleItem, subtitle, 
             <button className="button button--price button--price-active"> Aan de slag</button>
         </div>
         </div>
+        </div>
     :
         <div className="priceCard ">
-        <div className="priceCard__top">
+        <div className="priceCard__top priceCard__top--color">
             <div className="priceCard__subtitle">{subtitle}</div>
             <div className="priceCard__title">{title}</div>
             <div className="priceCard__price"> <span className="priceCard__price--span">€ {price}<div className="priceCard__price--decimal">99</div></span> / gebruiker / maand</div>

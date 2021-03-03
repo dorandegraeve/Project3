@@ -52,7 +52,11 @@
         height: 9.3rem;
         border-style: none;
         border-radius: 1.5rem;
-
+        @include respond(phone) { 
+            height: 5rem;
+            width: 80%;
+            border-radius: 0.5rem;
+         }
 
         &::placeholder{
             color: $color-grey-1;

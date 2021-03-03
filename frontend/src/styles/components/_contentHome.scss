@@ -20,6 +20,9 @@
         padding-left: 13.8rem;
         flex: 0 0 40%;
         z-index: 1;
+
+        
+        
         @include respond(tab-land) { 
            
             text-align: left;
@@ -38,6 +41,11 @@
             width: 45rem;
             line-height: 1.2;
             margin-bottom: 3rem;
+
+            @include respond(big-desktop) {  
+                font-size: 12rem; 
+                width: 100%; 
+            }
             @include respond(tab-port) { 
                 
                 
@@ -60,6 +68,11 @@
             font-weight: 200;  
             width: 70rem;
             line-height: 1.6;
+            
+            @include respond(big-desktop) {  
+                font-size: 4rem; 
+                width: 100%; 
+            }
             @include respond(phone) { 
                 font-size: 1.4rem; 
                 margin: 0 auto;
@@ -119,6 +132,10 @@
             overflow: visible!important;
            
         }
+        @include respond(big-desktop) {  
+            transform:  scale(1.3)
+                        translateY(20rem);
+                }
         @include respond(tab-land) { 
             opacity: 30%;
             transform: scale(0.7);

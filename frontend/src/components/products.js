@@ -28,7 +28,10 @@ const Product = ({title, text, subtitle, url, side}) => {
         <div className="product__content">
            {text}
         </div>
+        <div className="product__button">
             <button className="button button--product" type="button">Probeer nu</button>
+        </div>
+            
       </div>
        : 
       <div data-aos="fade-left" className="product product--left">
@@ -41,7 +44,9 @@ const Product = ({title, text, subtitle, url, side}) => {
         <div className="product__content">
            {text}
         </div>
+        <div className="product__button">
             <button className="button button--product" type="button">Probeer nu</button>
+        </div>
       </div>}
       
       {side === true ?
