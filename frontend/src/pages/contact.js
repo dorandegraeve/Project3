@@ -11,13 +11,17 @@ const ContactPage = ({data}) => (
   console.log("contact", data.allStrapiContentHomes),
   <Layout>
     
-         
-          <Demo
+          <ContentHome
           title = {data.allStrapiContentHomes.nodes[1].title}
           content = {data.allStrapiContentHomes.nodes[1].content}
           span = {data.allStrapiContentHomes.nodes[1].span}
           button = {data.allStrapiContentHomes.nodes[1].buttonText}
           url = {data.allStrapiContentHomes.nodes[1].contentHomeImage.childImageSharp.fixed}
+
+          />
+          <Demo
+          
+          
           />
 
         
