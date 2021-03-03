@@ -110,7 +110,8 @@
     .content__image {
         position: relative;
         width: 100%;
-        transition: visibility 0.5s;
+        transform-origin: right;
+        
         &-item {
             position: absolute!important;
             right: 0;
