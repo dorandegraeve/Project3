@@ -10,7 +10,7 @@ import Demo from "../components/demo"
 const ContactPage = ({data}) => (
   console.log("contact", data.allStrapiContentHomes),
   <Layout>
-    
+      <SEO title="Contact"/>
           <ContentHome
           title = {data.allStrapiContentHomes.nodes[1].title}
           content = {data.allStrapiContentHomes.nodes[1].content}

@@ -12,6 +12,8 @@ import Video from "../components/video"
 const IndexPage = ({ data}) => (
     console.log("data",data),
  <Layout>
+
+   <SEO title="Home"/>
    
     {data.allStrapiVideo.nodes.map(video => (
       <div className="video__container">
