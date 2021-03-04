@@ -53,25 +53,6 @@
         }
 
         
-        
-        
-        
-        
-        
-        
-        
-        @keyframes moveInBottom {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-        
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
-        
     }
 
     &--demo{
@@ -121,38 +102,8 @@
 
         
         
-        &::after {
-            content: "";
-            display: inline-block;
-            height: 100%;
-            width: 100%;
-            border-radius: 100px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            transition: all .4s;
-        }
-
+       
         
-        
-        &:hover::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
-        
-        
-        @keyframes moveInBottom {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-        
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
 
     }
     &--product {
@@ -254,38 +205,11 @@
         }
         
         
-        &::after {
-            content: "";
-            display: inline-block;
-            height: 100%;
-            width: 100%;
-            border-radius: 100px;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: -1;
-            transition: all .4s;
-        }
+        
 
         
         
-        &:hover::after {
-            transform: scaleX(1.4) scaleY(1.6);
-            opacity: 0;
-        }
     
-        
-        @keyframes moveInBottom {
-            0% {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-        
-            100% {
-                opacity: 1;
-                transform: translateY(0px);
-            }
-        }
         
     }
     &:focus{
@@ -309,6 +233,14 @@
         bottom: 0;
         @include respond(tab-land){
             left: 10px;
+        }
+        @include respond(tab-port){
+            width: 15rem;
+            border-radius: 1rem;
+            font-size: 1.4rem;
+            font-weight: 600;
+            left: auto;
+            bottom: 0;
         }
         &-active {
             background-color: $color-white-2;

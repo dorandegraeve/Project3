@@ -49,6 +49,7 @@ export default class IndexPage extends React.Component {
                             onChange={this._handleChange}
                             placeholder="Jouw e mailadres"
                             name="email"
+                            id="email"
                             style={{
                                 paddingLeft: "3.2rem",
                                 fontSize: "2rem",
