@@ -8,6 +8,14 @@ const PrijzenPage = ({data}) => (
   console.log("data",data),
   <Layout>
     <SEO title="Prijzen"/>
+    <div className="prijzen">
+    <h1 className="prijzen__title">Voor ieder wat wils</h1>
+    <div className="prijzen__text">
+    <p>We bieden verschillende pakketten aan zodat jij je mensen de</p>
+    <p>beste ondersteuning kan geven die bij hen past.
+    </p></div>
+    
+    </div>
     <div className="priceCard-container">
       {data.allStrapiPrice.nodes.map(price => (
         <Pricecard
