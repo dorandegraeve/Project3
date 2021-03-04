@@ -21,14 +21,15 @@
     "DynamicZone": {
       "type": "dynamiczone",
       "components": [
-        "test.test-component",
         "bloom.content-left",
         "bloom.title-h1",
         "bloom.title-h2",
         "bloom.video-url",
         "bloom.card",
         "bloom.content-right",
-        "bloom.price-card"
+        "bloom.price-card",
+        "bloom.module-item",
+        "bloom.text"
       ]
     }
   }

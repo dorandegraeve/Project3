@@ -2,7 +2,8 @@
   "collectionName": "components_bloom_price_cards",
   "info": {
     "name": "PriceCard",
-    "icon": "file-invoice-dollar"
+    "icon": "file-invoice-dollar",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -12,14 +13,26 @@
     "SubTitle": {
       "type": "string"
     },
-    "InterTitle": {
-      "type": "string"
-    },
-    "ListItem": {
-      "type": "string"
-    },
     "Price": {
       "type": "decimal"
+    },
+    "users": {
+      "type": "string"
+    },
+    "admins": {
+      "type": "string"
+    },
+    "modules": {
+      "type": "string"
+    },
+    "Populair": {
+      "type": "boolean",
+      "default": false
+    },
+    "item": {
+      "type": "component",
+      "repeatable": true,
+      "component": "bloom.module-item"
     }
   }
 }

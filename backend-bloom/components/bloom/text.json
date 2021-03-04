@@ -1,13 +1,12 @@
 {
-  "collectionName": "components_bloom_title_h1s",
+  "collectionName": "components_bloom_texts",
   "info": {
-    "name": "TitleH1",
-    "icon": "list",
-    "description": ""
+    "name": "text",
+    "icon": "align-justify"
   },
   "options": {},
   "attributes": {
-    "TitleH1": {
+    "text": {
       "type": "string"
     },
     "align": {

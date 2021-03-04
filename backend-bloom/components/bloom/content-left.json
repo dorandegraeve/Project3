@@ -2,20 +2,21 @@
   "collectionName": "components_bloom_content_lefts",
   "info": {
     "name": "ContentLeft",
-    "icon": "align-left"
+    "icon": "align-left",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Title": {
+    "TitleLeft": {
       "type": "string"
     },
-    "SubTitle": {
+    "SubTitleLeft": {
       "type": "string"
     },
-    "Content": {
+    "ContentLeft": {
       "type": "richtext"
     },
-    "ContentImage": {
+    "ContentImageLeft": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
