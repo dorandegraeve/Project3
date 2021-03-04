@@ -1,3 +1,6 @@
+
 module.exports = ({ env }) => ({
-  url: env('HEROKU_URL'),
+  url: "https://strapi-bloom.herokuapp.com",
 });
+
+// env('HEROKU_URL')
