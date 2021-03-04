@@ -42,10 +42,6 @@
             line-height: 1.2;
             margin-bottom: 3rem;
 
-            @include respond(big-desktop) {  
-                font-size: 12rem; 
-                width: 100%; 
-            }
             @include respond(tab-port) { 
                 
                 
@@ -68,11 +64,7 @@
             font-weight: 200;  
             width: 70rem;
             line-height: 1.6;
-            
-            @include respond(big-desktop) {  
-                font-size: 4rem; 
-                width: 100%; 
-            }
+           
             @include respond(phone) { 
                 font-size: 1.4rem; 
                 margin: 0 auto;

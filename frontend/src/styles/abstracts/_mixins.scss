@@ -30,6 +30,6 @@ $breakpoint keuzes:
         @media (max-width: 88em) {@content};  //1408px
     }
     @if $breakpoint == big-desktop {
-        @media (min-width: 112.5em) {@content};  //1800px
+        @media (min-width: 130em) {@content};  //1800px
     }
 }
